@@ -1,0 +1,390 @@
+body {
+    background-color: black;
+    font-family: "Roboto", "Noto Sans", sans-serif;
+}
+
+.main {
+    background-image: url("assests/imgaes/backgroung.jpg");
+    height: 100vh;
+    background-position: center center;
+    position: relative;
+    opacity: 1.9;
+    background-repeat: no-repeat;
+    background-size: max(100vw, 1800px);
+}
+
+.main .box {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    justify-content: space-around;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 82px;
+}
+
+nav img {
+    width: 114px;
+    position: relative;
+    z-index: 12;
+}
+
+nav button {
+    position: relative;
+    z-index: 12;
+}
+
+.content {
+    height: calc(100% - 62px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 12;
+}
+
+.content :nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: white;
+    font-weight: bold;
+    background-color: rgba(65, 62, 62, 0.2);
+    color: #afa4a4;
+    border: 1px solid rgb(117, 114, 114);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.btn-red {
+    background-color: rgb(204, 11, 11);
+    color: white;
+    padding: 10px 28px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.main input {
+    padding: 7px 98px 19px 98px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: rgba(65, 62, 62, 0.2);
+    color: #ebe5e5;
+    border: 1px solid rgb(117, 114, 114);
+}
+
+.content-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+.main input::placeholder {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.separation {
+    height: 7px;
+    background-color: #232323;
+    width: 100%;
+    top: 10;
+
+}
+
+.tv-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+
+}
+
+
+.tv-text {
+    max-width: 500px;
+}
+
+.tv-text h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.tv-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.tv-image {
+    position: relative;
+    width: 30vw;
+    /* or any size you prefer */
+}
+
+.tv-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 10;
+
+}
+
+.tv-image video {
+    position: absolute;
+    top: 10%;
+    /* adjust this */
+    left: 3%;
+    right: 31px;
+    /* adjust this */
+    width: 65%;
+    /* adjust this */
+    height: 38%;
+    /* adjust this */
+    z-index: 20;
+    border-radius: 20;
+}
+
+
+.mobile-image-wrapper {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+}
+
+.mobile-image-wrapper .mobile-frame {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+    position: relative;
+}
+
+.mobile-image-wrapper .mobile-overlay {
+    position: absolute;
+    top: 3%;
+    left: 28%;
+    right: 40%;
+    width: 45%;
+    height: 94%;
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 19px;
+}
+
+
+.mobile-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.mobile-text h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.mobile-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.tv-section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 80px;
+    /* Increase this as needed */
+    padding-right: 99px;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+
+}
+
+.tv-image-2 {
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    max-width: 500px;
+    /* adjust based on design */
+    margin: auto;
+}
+
+.tv-image-2 img {
+    width: 80%;
+    height: auto;
+    display: block;
+    z-index: 10;
+
+}
+
+.tv-image .video-2 {
+    position: absolute;
+    top: 3%;
+    /* tweak this to align with the screen */
+    left: 2.6%;
+    /* tweak this to align with the screen */
+    width: 65.99%;
+    /* tweak width of the video */
+    height: 46%;
+    /* tweak height of the video */
+    border-radius: 20x;
+    z-index: 5;
+}
+
+.faq h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    font-style: normal;
+    text-align: center;
+
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 24px;
+}
+
+
+.faqbox {
+    display: flex;
+    background-color: rgb(44, 43, 43);
+    padding: 34px;
+    max-width: 70vw;
+    margin: 11px auto;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+
+}
+
+.faqbox:hover {
+    background-color: rgb(73 62 62);
+}
+
+.content2 input {
+    padding: 15px 350px 20px 120px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: rgba(65, 62, 62, 0.2);
+    color: #ebe5e5;
+    border: 1px solid rgb(117, 114, 114);
+}
+
+.content2 input::placeholder {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.content-buttons2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+.content2 {
+    height: calc(100% - 62px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 12;
+}
+
+.content2 button {
+    background-color: rgb(204, 11, 11);
+    color: white;
+    padding: 15px 35px;
+    font-size: 20px;
+    border-radius: 9px;
+}
+
+.content2 button :hover {
+    background-color: rgb(224, 220, 220);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80vw;
+    margin: auto;
+    transform: translateX(40px);
+
+    padding: 95px 0;
+    gap: 20px;
+    color: #aaa;
+    background-color: black;
+    font-size: 14px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-item a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-item a:hover {
+    text-decoration: underline;
+}
+
+.call {
+    color: #ccc;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: -3px;
+    margin-left: 159px;
+    /* adjust this value as needed */
+}
+
+.Netflix {
+    color: #ccc;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 3px;
+    margin-left: 2px;
+    /* adjust this value as needed */
+}
+
+#tokir {
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 11px; /* optional for styling */
+    color: #aaa;     /* optional for color */
+}
